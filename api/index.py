@@ -2,7 +2,7 @@ from flask import Flask, request
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "https://ai4good-workshop.vercel.app"}})
 
 todos = []
 todo_id_counter = 1
