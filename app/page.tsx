@@ -24,16 +24,6 @@ const themeColors = [
 ];
 
 export default function Home() {
-  return (
-    <ConfigProvider>
-      <ConnectionProvider>
-        <HomeInner />
-      </ConnectionProvider>
-    </ConfigProvider>
-  )
-}
-
-export function HomeInner() {
   const [toastMessage, setToastMessage] = useState<{
     message: string;
     type: ToastType;
@@ -59,22 +49,9 @@ export function HomeInner() {
     }
     return false;
   }, [wsUrl])
-
   return (
-    <>
-      <Head>
-        <title>{config.title}</title>
-        <meta name="description" content={config.description} />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-        />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <ConfigProvider>
+      <ConnectionProvider>
       <main className="relative flex flex-col justify-center px-4 items-center h-full w-full bg-black repeating-square-background">
         <AnimatePresence>
           {toastMessage && (
@@ -122,8 +99,10 @@ export function HomeInner() {
               handleConnect(true, mode);
             }}
           />
-        )}
-      </main>
-    </>
-  );
+          )}
+        </main>
+      </ConnectionProvider>
+    </ConfigProvider>
+  )
 }
+
