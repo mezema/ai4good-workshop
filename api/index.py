@@ -2,14 +2,13 @@ from flask import Flask, request, jsonify
 import joblib
 import numpy as np
 import os
+from sklearn.datasets import load_iris
+from sklearn.ensemble import RandomForestClassifier
 
-current_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(current_dir, 'model.joblib')
-
-print("Current Working Directory:", os.getcwd())
-print("Model Path:", model_path)
-
-model = joblib.load(model_path)
+# Load dataset and train a model
+iris = load_iris()
+model = RandomForestClassifier()
+model.fit(iris.data, iris.target)
 
 class_names = np.array(['setosa', 'versicolor', 'virginica'])
 
