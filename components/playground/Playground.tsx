@@ -311,7 +311,7 @@ export default function Playground({
             <AudioInputTile frequencies={localMultibandVolume} />
           </ConfigurationPanelItem>
         )}
-        <div className="w-full">
+        {/* <div className="w-full">
           <ConfigurationPanelItem title="Color">
             <ColorPicker
               colors={themeColors}
@@ -323,14 +323,14 @@ export default function Playground({
               }}
             />
           </ConfigurationPanelItem>
-        </div>
-        {config.show_qr && (
+        </div> */}
+        {/* {config.show_qr && (
           <div className="w-full">
             <ConfigurationPanelItem title="QR Code">
               <QRCodeSVG value={window.location.href} width="128" />
             </ConfigurationPanelItem>
           </div>
-        )}
+        )} */}
       </div>
     );
   }, [
