@@ -9,14 +9,7 @@ import Playground from '@/components/playground/Playground'
 import { PlaygroundConnect } from '@/components/PlaygroundConnect'
 
 const themeColors = [
-  "cyan",
-  "green",
-  "amber",
   "blue",
-  "violet",
-  "rose",
-  "pink",
-  "teal",
 ];
 
 export function HomeInner() {
