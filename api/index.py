@@ -1,7 +1,5 @@
 from flask import Flask, request, jsonify
-import joblib
 import numpy as np
-import os
 from sklearn.datasets import load_iris
 from sklearn.ensemble import RandomForestClassifier
 
@@ -9,7 +7,6 @@ from sklearn.ensemble import RandomForestClassifier
 iris = load_iris()
 model = RandomForestClassifier()
 model.fit(iris.data, iris.target)
-
 class_names = np.array(['setosa', 'versicolor', 'virginica'])
 
 app = Flask(__name__)
