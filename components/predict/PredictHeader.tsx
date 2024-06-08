@@ -32,7 +32,7 @@ export const PredictHeader = ({
           <a
             href={githubLink}
             target="_blank"
-            className={`text-white hover:text-white/80`}
+            className="text-red-500 hover:text-red-700"
           >
             <GithubSVG />
           </a>
