@@ -55,3 +55,6 @@
 - **Deploy ML models with FastAPI, Docker, and Heroku | Tutorial:** [YouTube Tutorial](https://youtu.be/h5wLuVDr0oc?si=jXauCHxvMYFPqnD2)
 
 - **FastAPI for Machine Learning:** [YouTube Live Coding Session](https://www.youtube.com/live/_BZGtifh_gw?si=eKgmAeBUhlWhGd5X)
+
+
+**UI Templates for NextJS:**  [Vercel Templates] https://vercel.com/templates
