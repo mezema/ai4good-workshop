@@ -55,4 +55,3 @@
 - **Deploy ML models with FastAPI, Docker, and Heroku | Tutorial:** [YouTube Tutorial](https://youtu.be/h5wLuVDr0oc?si=jXauCHxvMYFPqnD2)
 
 - **FastAPI for Machine Learning:** [YouTube Live Coding Session](https://www.youtube.com/live/_BZGtifh_gw?si=eKgmAeBUhlWhGd5X)
-  - A live coding session on creating a machine learning web application using FastAPI.
